@@ -2,12 +2,14 @@ import { Button, Container, Stack } from 'react-bootstrap'
 import { useState } from 'react'
 import './styles.css'
 import BudgetCard from './components/BudgetCard'
+import AddBudgetModule from './components/AddBudgetModule'
 
 
 function App() {
   
 
   return (
+    <>
     <Container className='my-4'>
       <Stack direction='horizontal' gap="2" className='mb-4'>
         <h1 className='me-auto'>Budgets</h1>
@@ -18,6 +20,8 @@ function App() {
         <BudgetCard name="Entertainment" amount={200} max={1000}></BudgetCard>
       </div>
     </Container>
+    <AddBudgetModule />
+    </>
   )
 }
 
